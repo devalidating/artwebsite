@@ -1,0 +1,326 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(255,255,255);
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  height: 500px;
+  text-align: center;
+  background-image: url(https://i.ibb.co/R0mkJnm/IMG-1234.jpg);
+
+  background-position: 50% 45%;
+    background-size: 100%;
+
+}
+
+.header {
+  padding: 10px 0px;
+    position:absolute;
+  background: #555;
+  color: #f1f1f1;
+    width: 100%;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.headercont {
+	padding: 0px 10px;
+	color: white;
+}
+.link {
+	float: right;
+	padding: 10px;
+}
+.content {
+	padding-top: 102px;
+	margin-left:10%;
+	margin-right:10%;
+}
+.sticky + .content {
+  padding-top: 102px;
+}
+.footer {
+	padding-top: 30px;
+	text-align:center;
+	background-color:#F2EFE5;
+	float:bottom;
+	position: absolute;
+	width: 100%;
+	color: #5B5A58;
+}
+#tris {
+	width: 100%;
+	height: 2000px;
+	background-color: rgb(20,20,20);
+	clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+	background-image: url(https://ebin.files.wordpress.com/2007/03/wallpaper-cf2-1440x900.png);
+	background-size: 100%;
+}
+#myHeader {
+	background-image: linear-gradient(rgba(25,25,25,0.6), rgba(25,25,25,0));
+	height: 10%;
+	text-shadow:2px 2px 5px #21211F
+}
+.button {
+	margin: 10px;
+	margin-top: 16px;
+	background-color: transparent;
+	border: 2px solid transparent;
+	text-align: center;
+	text-decoration: none;
+	float: right;
+	color:white;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	border-radius: 50px;
+	
+}
+
+.button:hover {
+	border: 2px solid rgba(255,255,255,0.5);
+}
+
+.button:focus {
+	outline: 0;
+	border: 3px solid white;
+}
+.slideshow {
+	position: absolute;
+	margin-top: 100px;
+	
+	
+}
+#port{
+	padding-top:10%;
+	padding-left: 20px;
+	padding-right: 20px;
+	  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0 4px;
+}
+.column {
+	  flex: 32%;
+	max-width: 32%;
+	padding: 0 4px;
+	transition: 0.5s;
+}
+.column.focus {
+	flex: 60%;
+	max-width: 60%;
+	transition: 0.5s;
+}
+.column.defocus {
+	flex: 18%;
+	max-width: 18%;
+	transition: 0.5s;
+}
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.5s;
+}
+.img.focus {
+	margin-bottom: 50px;
+	transition: 0.5s;
+	width: 100%;
+}
+.img.defocus {
+	trasnition: 0.5s;
+	width: 50%;
+	margin-bottom:0px;
+}
+#portfolio {
+	font-size: 100px;
+	color: white;
+	text-align: right;
+	margin-top:10px;
+}
+#portcontain {
+	padding-top: 10%;
+	padding-bottom: 30px;
+}
+.desc
+{
+	font-size:0px;
+	color: transparent;
+	margin-top:-50px;
+	margin-bottom: 50px;
+}
+.desc.focus {
+	font-size: 20px;
+	color:white;
+	transition:1s;
+	margin-bottom: 25px;
+}
+
+</style>	
+</head>
+<body>
+
+<div class="top-container">
+	<div style="margin-top:250px;color:white;  filter: blur(0px);
+  -webkit-filter: blur(0px);text-shadow:3px 3px 5px #21211F">
+	<h1>I'm Gregory Thompson</h1>
+	<p id="label" 	style="margin-top: 50px;font-size:0px;">and this is my website</p>
+	</div>
+</div>
+
+<div class="content" id="top">
+  <h3>My Name's Greg.</h3>
+	<p>Or Gregory. Or GT. Or whatever floats your boat. This is normally the point where I would write some highfalutin bioraphical novela, but I've written about one too many college essays for that to be fun. So I'll forgoe it. Just know that I'm a human and you're pretty cool.</p>
+	<p>As of writing this, I'm in the middle of slapping this site together. A little AWS here, little CSS there, throw in some Node.js to make it all run and I should have something midly acceptable. It's my first site, so don't judge too hard.</p>
+	<br>
+  <h3>You Like It?</h3>
+	<p>I sure hope you do. Because that makes at least one of us. The idea is you scroll down to see more content and press the buttons up top to see different pages. Revolutionary, I know. The Backend is a mess. Ideally, I would set up some template system for pages and pull the text from a database. It would be easy, dynamic and pretty sweet. It wouldn't make a difference to you, of course, because the end result is the same. But all that takes effort, and effort is a scarce commodity. So this is the way it is going to be for now.</p>
+	<p>At This point, I hope you've realized I'm just putting in filler text. This site looks considerably better when the border between the image at top and the image below is bigger than 10 pixels apart. So I'm just trying to write some stuff for volume. So here is some good old classic Lorem Ipsum text.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p>I don't know what that means. i've hard its nonsense, but since I don't speak latin it could all be a "if your hand is bigger than your face it means your gullible" situation.</p>
+	<br>
+	<br>
+  </div>
+<div id="tris">
+	<div id="portcontain">
+	<div id="portfolio">
+			Portfolio  &nbsp;&nbsp;&nbsp;&nbsp;
+	</div>
+	<div class="row"> 
+		
+		<div class="column">
+				<img class="img" id="-1" src='https://i.ytimg.com/vi/2wExLjkk3o0/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://i.ytimg.com/vi/oYe9hIVeupE/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://i.ytimg.com/vi/mQKnTDe7FQs/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+		</div>
+		<div class="column">
+				<img class="img" src='https://www.5wpr.com/new/wp-content/uploads/2014/06/digital_marketing.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://www.5wpr.com/new/wp-content/uploads/2014/06/digital_marketing.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://i.ytimg.com/vi/2wExLjkk3o0/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+		</div>
+		<div class="column">
+				<img class="img" src='https://i.ytimg.com/vi/2wExLjkk3o0/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://i.ytimg.com/vi/2wExLjkk3o0/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+				<img class="img" src='https://i.ytimg.com/vi/2wExLjkk3o0/maxresdefault.jpg'><p class="desc">This is gucci Image. Me Like-y. You should like as well, mi amigo.</p>
+		</div>
+		
+	</div>
+	</div>
+</div>
+<div class="content">
+	<h3>Glad You're Still With Us!</h3>
+	<p>Or Me. Like the non-rectangular image border? Fancy Shmancy.</p>
+	<br>
+	<h3>Yea, this home landing page is done for now</h3>
+	<p>Relax, enjoy the rest of the site, or leave (whatever you want). I think this is some of the most filler text I've created in a while</p>
+	<br>
+
+</div>
+<div class="sticky" id="myHeader">
+  <h2 class="headercont" style="float:left;">Gregory Thompson</h2>
+	<div class="headercont" id="links" style="float:right;text-align:right;margin-right:0px;">
+		<div>
+			<button class="button link" onclick='Resume()'>Resume</button> 			
+			<button class="button link" onclick="Portfolio()">Portfolio</button> 
+			<button class="button link" onclick="AboutMe()">About Me</button>
+			<button class="button link" onclick="window.scroll({top:0,behavior:'smooth'});">Home</button> 			
+		</div>
+	</div>
+</div>
+<div class="footer" id="foot">
+	<p>This is my website, thanks for reading.</p>
+	<p>It's just a fun project, hosted with AWS and run through Node.js</p>
+</div>
+
+<script>window.onscroll = function() {myFunction()};
+function myFunction() {if(window.pageYOffset<=150){document.getElementById("label").style.fontSize=window.pageYOffset/2+"px"}};	
+function scrollTo(input) {
+	window.scroll({
+  top: document.getElementById(input).getBoundingClientRect().top + window.scrollY-100,
+  behavior: 'smooth'
+});
+};
+
+function Resume(){scrollTo("foot");};
+function Portfolio(){scrollTo("portfolio");};
+function AboutMe(){scrollTo("top");};
+const image = document.getElementById("-1");
+//image.addEventListener('click', _ => myFunc(image));
+toArray(image.parentElement.parentElement.children).forEach(pelement => toArray(pelement.children).forEach(element => setup(element)));
+var selected = null;
+function setup(element) {
+	if(element.classList.contains("img"))
+	{
+		element.addEventListener('click', _ => dorit(element));
+	}
+}
+function dorit(element)
+{
+	if(selected==element)
+	{	
+		deselect(element);
+		selected=null;
+	} else {
+		select(element);
+	}
+}
+function select(element)
+{
+	if(selected!=null) {deselect(selected);}
+	selected=element;
+	selected.nextElementSibling.classList.toggle('focus',true);
+	selected.nextElementSibling.classList.toggle('defocus',false);
+	element.parentElement.classList.toggle('focus');
+	toArray(element.parentElement.children).forEach(el => el.classList.toggle('defocus',true));
+	element.classList.toggle('defocus',false);
+	element.classList.toggle('focus',true);
+	toArray(element.parentElement.parentElement.children).forEach(el => el.classList.toggle('defocus',true));
+	element.parentElement.classList.toggle('defocus',false);
+	console.log('yeet');
+		window.scroll({
+  top: element.getBoundingClientRect().top + window.scrollY-100,
+  behavior: 'smooth'
+});
+}	
+function deselectChildren(element)
+{
+	toArray(element.children).forEach(el => deselect(el));
+	
+}
+function deselect(element)
+{
+	element.classList.toggle('focus',false);
+	element.parentElement.classList.toggle('focus',false);
+	toArray(element.parentElement.children).forEach(el => el.classList.toggle('defocus',false));
+	toArray(element.parentElement.parentElement.children).forEach(el => el.classList.toggle('defocus',false));
+	element.nextElementSibling.classList.toggle('focus',false);
+	element.nextElementSibling.classList.toggle('defocus',true);
+	//console.log(element.nextElementSibling);
+}
+function toArray(obj) {
+  var array = [];
+  for (var i = obj.length >>> 0; i--;) { 
+    array[i] = obj[i];
+  }
+  return array;
+}
+</script>
+
+
+</body></html>
